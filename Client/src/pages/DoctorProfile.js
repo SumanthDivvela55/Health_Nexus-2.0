@@ -177,20 +177,27 @@ const Doctorlogin = ({ userId }) => {
                         <div className="action-buttons">
                             {!isAccepted && appointment.status !== 'rejected' && (
                                 <>
-                                    <button
-                                        className='mx-3'
-                                        style={{ backgroundColor: 'green' }}
-                                        onClick={() => {
-                                            handleAcceptAppointment(appointment._id);
-                                        }}
-                                    >
-                                        Accept
-                                    </button>
-                                    <button onClick={() => {
-                                        handleRejectAppointment(appointment._id);
-                                    }}>
-                                        Reject
-                                    </button>
+                                    <div style={{ display: 'flex' }}>
+                                        <div>
+                                            <button
+                                                className='mx-3'
+                                                style={{ backgroundColor: 'green' }}
+                                                onClick={() => {
+                                                    handleAcceptAppointment(appointment._id);
+                                                }}
+                                            >
+                                                Accept
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button onClick={() => {
+                                                handleRejectAppointment(appointment._id);
+                                            }}>
+                                                Reject
+                                            </button>
+                                        </div>
+                                    </div>
+
                                 </>
                             )}
                             {isAccepted && <span style={{ color: "green" }}>Accepted</span>}

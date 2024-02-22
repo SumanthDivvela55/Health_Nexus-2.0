@@ -58,13 +58,20 @@ const Doctorlogin = ({ userId }) => {
                                             )}
                                         </div>
                                         <div className="text-content1">
-                                            <p><strong>Name:</strong>{userInfo.name}</p>
-                                            <p><strong>Specialization:</strong> {userInfo.specialization}</p>
-                                            <p><strong>Experience:</strong> {userInfo.experience}</p>
-                                            <p><strong>Email:</strong> {userInfo.email}</p>
-                                            <p><strong>address:</strong> {userInfo.address}</p>
-                                            <p><strong>phoneNumber:</strong> {userInfo.phoneNumber}</p>
+                                            <div className="info-line">
+                                                <p><strong>Name:</strong>{userInfo.name}</p>
+                                                <p><strong>Email:</strong> {userInfo.email}</p>
+                                            </div>
+                                            <div className="info-line">
+                                                <p><strong>Specialization:</strong> {userInfo.specialization}</p>
+                                                <p><strong>Phone Number:</strong> {userInfo.phoneNumber}</p>
+                                            </div>
+                                            <div className="info-line">
+                                                <p><strong>Address:</strong> {userInfo.address}</p>
+                                                <p><strong>Experience:</strong> {userInfo.experience}</p>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>

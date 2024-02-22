@@ -46,12 +46,6 @@ const UserMenu = () => {
                         Settings
                     </NavLink>
                     <NavLink
-                        to="/"
-                        style={linkStyle}
-                    >
-                        Chat
-                    </NavLink>
-                    <NavLink
                         to="/doctor"
                         style={linkStyle}
                     >

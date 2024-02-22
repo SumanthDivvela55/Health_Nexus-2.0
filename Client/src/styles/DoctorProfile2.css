@@ -40,3 +40,18 @@
 .profile-image1 {
     margin-bottom: 20px;
 }
+
+.text-content1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.info-line p {
+    margin: 0;
+}
